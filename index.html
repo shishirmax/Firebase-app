@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase Application</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<h1>Movie Maniac</h1>
+	<h3>Save all your Favoutire Movie</h3>
+	<input type="text" id="movieName" placeholder="Enter Movie Name" onkeypress="return saveToList(event)">
+	<h4>My Favourite Movies:</h4>
+	<ol id="favMovies"></ol>
+
+	
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCK2Mz4HC7QbLgZm2MPmPwNPkNefAwvIlg",
+    authDomain: "addmovie-5e224.firebaseapp.com",
+    databaseURL: "https://addmovie-5e224.firebaseio.com",
+    projectId: "addmovie-5e224",
+    storageBucket: "addmovie-5e224.appspot.com",
+    messagingSenderId: "29241553969"
+  };
+  firebase.initializeApp(config);
+</script>
+	<script type="text/javascript" src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
