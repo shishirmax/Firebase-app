@@ -23,7 +23,7 @@ function refreshUI(list){
 	//console.log("generate list");
 	var lt = '';
 	for(var i=0;i<list.length;i++){
-		lt+= '<li data-key="'+list[i].key+'">'+list[i].name+ '['+getLinks(list[i].key,list[i].name)+']</li>';
+		lt+= '<li class="list-group-item" data-key="'+list[i].key+'">'+list[i].name+ ' <span class="edit-delete"> '+getLinks(list[i].key,list[i].name)+'</span></li>';
 	};
 	document.getElementById('favMovies').innerHTML = lt;
 	console.log(list);
@@ -32,8 +32,8 @@ function refreshUI(list){
 
 function getLinks(key,name){
 	var links = '';
-	links += '<a href="javascript:edit(\'' + key + '\',\'' + name + '\')">Edit</a> | ';
-	links += '<a href="javascript:del(\'' + key + '\',\'' + name + '\')">Delete</a>';
+	links += '<a href="javascript:edit(\'' + key + '\',\'' + name + '\')"><i class="fa fa-pencil" aria-hidden="true"></i></a> | ';
+	links += '<a href="javascript:del(\'' + key + '\',\'' + name + '\')"><i class="fa fa-trash" aria-hidden="true"></i></a>';
 	//links += '<a href="javascript:edit(\''+key+'\',\''+mvName+'\')">Edit</a> | ';
 	//links += '<a href="javascript:del(\''+key+'\',\''+mvName+'\')">Delete</a>';
 	return links;

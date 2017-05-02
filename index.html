@@ -2,15 +2,26 @@
 <html>
 <head>
 	<title>Firebase Application</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-	<h1>Movie Maniac</h1>
-	<h3>Save all your Favoutire Movie</h3>
-	<input type="text" id="movieName" placeholder="Enter Movie Name" onkeypress="return saveToList(event)">
-	<h4>My Favourite Movies:</h4>
-	<ol id="favMovies"></ol>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h1>Movie Maniac</h1>
+				<h3>Save all your Favoutire Movie</h3>
+					<input type="text" id="movieName" placeholder="Enter Movie Name" onkeypress="return saveToList(event)">		
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<h3>My Favourite Movies:</h3>
+				<ol id="favMovies" class="list-group"></ol>
+			</div>
+		</div>
+	</div>
 	
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
 <script>

@@ -1,6 +1,6 @@
 body{
 	font-family: "calibri";
-	background:#efefef;
+	background-color: #efefef;
 	padding: 32px;
 	padding-top: 16px;
 	color:333;
@@ -17,4 +17,10 @@ h4{
 	width: 98%;
 	padding: 9px;
 	font-size: 16px;
+}
+li{
+	font-size: 20px;
+}
+span.edit-delete{
+	float: right;
 }
